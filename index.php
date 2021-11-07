@@ -15,9 +15,10 @@ include "includes/newClass.inc.php";
 include "includes/DbClass.inc.php";
 
 
-print_r(PDO::getAvailableDrivers());
 
 
+$object = new DB();
+$object->connect();
 
 ?>
 
